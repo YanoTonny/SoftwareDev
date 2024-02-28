@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ccc;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .image-grid a {
+            display: block;
+            text-decoration: none;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        li img {
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section id="home">
+        <h1>Welcome to Our Website!</h1>
+        <p>Explore the latest in technology innovation:</p>
+        <a href="https://www.example.com/technology"><img src="technology_image.jpg" alt="Technology Image"></a>
+    </section>
+
+    <section id="gallery">
+        <h2>Nature Gallery</h2>
+        <div class="image-grid">
+            <a href="https://www.example.com/nature_image1"><img src="nature_image1.jpg" alt="Nature Image 1"></a>
+            <a href="https://www.example.com/nature_image2"><img src="nature_image2.jpg" alt="Nature Image 2"></a>
+            <a href="https://www.example.com/nature_image3"><img src="nature_image3.jpg" alt="Nature Image 3"></a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://www.example.com/food1"><img src="food1_image.jpg" alt="Food 1"> Food 1</a></li>
+            <li><a href="https://www.example.com/food2"><img src="food2_image.jpg" alt="Food 2"> Food 2</a></li>
+            <li><a href="https://www.example.com/food3"><img src="food3_image.jpg" alt="Food 3"> Food 3</a></li>
+        </ul>
+    </section>
+</body>
+</html>
