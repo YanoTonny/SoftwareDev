@@ -7,12 +7,15 @@
         <form action="processing.php" method="post">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Enter your name">
+           
             <br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" aria-label="Password" aria-describedby="password-help"/>
+            
             <br>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="Enter your email">
+            
             <br>
             
             <label for="phone">Phone:</label>
@@ -40,7 +43,9 @@
 
             <input type="checkbox" id="hiking" name="Interests" value="hiking">
             <label for="hiking">hiking:</label>
+
             <br>
+
             <label for="car">Select a car model:</label>
             <select id="car" name="car">
                 <option value="Toyota">Toyota:</option>
@@ -52,6 +57,11 @@
                 <option value="Ford">Ford:</option>
                 <option value="Jeep">Jeep:</option>
             </select>
+
+            <br>
+
+            <button type="Submit">Submit:</button>
+            <button type="Reset">Reset:</button>        
         </form>
     </body>
 </html>
