@@ -1,0 +1,6 @@
+My name is Tonny Odhiambo
+2nd line with numbers: 12345
+3rd line with mixed content: apples and oranges
+4th line appended
+5th line appended with numbers: 67890
+6th line appended with mixed content: grapes and bananas

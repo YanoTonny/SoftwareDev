@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML DOM & EVENTS</title>
+    </head>
+    <body>
+        <p id="p_one">Hello, welcome to my webpage.</p>
+        <button id="btn_change">Change</button>
+        <button onclick="changeColor">Change Color</button>
+
+        <script>
+            const button = document.querySelector('#btn_change');
+
+            function changeText(event){
+                const p = document.querySelector('#p_one');
+                p.innerText = 'The paragraph content has been changed!';
+
+            }
+
+            button.addEventListener('click', changeText);
+
+            document.addEventListener('keydown', (event) => {
+                console.log("You have pressed a key." + event.key);
+
+            });
+
+            document.addEventListener('keyup', (event) => {
+                console.log(event.key + " has been released");
+
+            });
+
+            document.addEventListener('mousedown', () =>{
+                console.log("The mouse button has been pressed")
+            }) 
+
+            document.addEventListener('mouseup', () =>{
+                console.log("The mouse button has been released.")
+            }) 
+
+            function changeColor(){
+                var p = document.getElementId('p_one');
+                p.style.color = 'red';
+            }
+
+
+
+        </script>
+    </body>
+</html>
